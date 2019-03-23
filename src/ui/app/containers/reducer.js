@@ -16,8 +16,8 @@ const initialState = fromJS({
 
 function reducer(state = initialState, action) {
   switch (action.type) {
-    case ???:
-      // TODO: Set things in the Redux store
+    case DISPATCH_ACTIONS:
+    // TODO: Set things in the Redux store
     default:
       return state;
   }

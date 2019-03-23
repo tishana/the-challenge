@@ -22,9 +22,9 @@ class WelcomeForm extends React.PureComponent {
       <form className="flex flex-column">
         {/* TODO: Add elements to form to collect user input */}
         <Field
-          name="???"
+          name="name"
           component={RFTextField}
-          label="???"
+          label="Name:"
         />
         <div className="center mt3">
           <Button variant="contained" color="primary" type="submit">
