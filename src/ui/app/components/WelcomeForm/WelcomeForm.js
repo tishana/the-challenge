@@ -21,20 +21,15 @@ class WelcomeForm extends React.PureComponent {
     return (
       <form className="flex flex-column">
         {/* TODO: Add elements to form to collect user input */}
-        {/* <Field
-          firstName="firstName"
+        <Field
+          name="firstName"
           component={RFTextField}
           label="First Name:"
         />
         <Field
-          lastName="lastName"
+          name="lastName"
           component={RFTextField}
           label="Last Name:"
-        /> */}
-        <Field
-          username="username"
-          component={RFTextField}
-          label="Username:"
         />
         <div className="center mt3">
           <Button variant="contained" color="primary" type="submit" onClick={handleSubmit}>

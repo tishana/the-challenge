@@ -9,7 +9,7 @@ import { DISPATCH_ACTIONS } from './constants';
 export function getLuckyNumber(username) {
   return {
     type: DISPATCH_ACTIONS.GET_LUCKY_NUMBER,
-    username
+    username: username
   };
 }
 

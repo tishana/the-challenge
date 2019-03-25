@@ -25,8 +25,9 @@ class LuckyNumber extends React.PureComponent {
   }
 }
 
-const mapStateToProps = () => ({
+const mapStateToProps = (state) => ({
+  values: state.values
   // TODO: Get values from Redux store
 });
 
-export default connect()(LuckyNumber);
+export default connect(mapStateToProps)(LuckyNumber);
