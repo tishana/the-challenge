@@ -23,7 +23,6 @@ export function* getLuckyNumber({ username }) {
 
   try {
     const result = yield call(request, requestUrl);
-    // const result = yield call(requestUrl, usrnm);
 
 
     // TODO: Do stuff with the result
