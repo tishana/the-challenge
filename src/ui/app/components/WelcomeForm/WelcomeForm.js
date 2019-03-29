@@ -16,7 +16,7 @@ import { RFTextField } from 'components/ReduxFormFields/RFTextField';
 
 class WelcomeForm extends React.PureComponent {
   render() {
-    const { handleSubmit } = this.props;
+    const { handleSubmit, handleFirstNameChange, handleLastNameChange } = this.props;
 
     return (
       <form className="flex flex-column">
@@ -25,11 +25,13 @@ class WelcomeForm extends React.PureComponent {
           name="firstName"
           component={RFTextField}
           label="First Name:"
+          onChange={handleFirstNameChange}
         />
         <Field
           name="lastName"
           component={RFTextField}
           label="Last Name:"
+          onChange={handleLastNameChange}
         />
         <div className="center mt3">
           <Button variant="contained" color="primary" type="submit" onClick={handleSubmit}>

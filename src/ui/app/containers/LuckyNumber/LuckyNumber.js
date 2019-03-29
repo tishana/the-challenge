@@ -26,7 +26,8 @@ class LuckyNumber extends React.PureComponent {
 }
 
 const mapStateToProps = (state) => ({
-  values: state.values
+  username: state.username,
+  luckNumber: state.luckNumber
   // TODO: Get values from Redux store
 });
 
