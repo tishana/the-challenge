@@ -16,22 +16,28 @@ import { RFTextField } from 'components/ReduxFormFields/RFTextField';
 
 class WelcomeForm extends React.PureComponent {
   render() {
-    const { handleSubmit, handleFirstNameChange, handleLastNameChange } = this.props;
+    const { handleSubmit } = this.props;
 
     return (
       <form className="flex flex-column">
         {/* TODO: Add elements to form to collect user input */}
         <Field
+          name="username"
+          component={RFTextField}
+          label="Username:"
+
+        />
+        <Field
           name="firstName"
           component={RFTextField}
           label="First Name:"
-          onChange={handleFirstNameChange}
+
         />
         <Field
           name="lastName"
           component={RFTextField}
           label="Last Name:"
-          onChange={handleLastNameChange}
+
         />
         <div className="center mt3">
           <Button variant="contained" color="primary" type="submit" onClick={handleSubmit}>
@@ -51,4 +57,6 @@ WelcomeForm.propTypes = {
 // @see https://redux-form.com/7.4.2/docs/api/reduxform.md/
 export default reduxForm({
   form: 'welcome',
+  // validate,
+  // warn
 })(WelcomeForm);

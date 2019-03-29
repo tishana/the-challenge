@@ -12,14 +12,16 @@ import { DISPATCH_ACTIONS } from './constants';
 // TODO: Initialize more things in the Redux store if needed
 const initialState = fromJS({
   luckyNumber: -1,
-  username: ""
+  username: "",
+  firstName: "",
+  lastName: ""
 });
 //never return undefined from a reducer
 function reducer(state = initialState, action) {
   switch (action.type) {
     case DISPATCH_ACTIONS:
       return {
-        ...state
+        luckyNumber: action.payload.luckyNumber
       }
     // TODO: Set things in the Redux store
     default:

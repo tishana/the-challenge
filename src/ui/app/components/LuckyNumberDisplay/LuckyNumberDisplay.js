@@ -18,7 +18,7 @@ class LuckyNumberDisplay extends React.PureComponent {
         {/* TODO: Display the user's full name and their lucky number */}
         <h2>Hello, {values.firstName} {values.lastName}!</h2>
         <h2>Your lucky number is</h2>
-        {/* <h2>{this.values.luckyNumber}</h2> */}
+        <h2>{values.luckyNumber}</h2>
       </div>
     );
   }

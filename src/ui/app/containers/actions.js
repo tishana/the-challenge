@@ -6,10 +6,12 @@
 
 import { DISPATCH_ACTIONS } from './constants';
 
-export function getLuckyNumber(username) {
+export function getLuckyNumber(values) {
   return {
     type: DISPATCH_ACTIONS.GET_LUCKY_NUMBER,
-    username: username
+    payload: {
+      luckyNumber: values.luckyNumber
+    }
   };
 }
 
